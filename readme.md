@@ -25,5 +25,3 @@ This app allows users to create, read, update, and delete notes (CRUD operations
 - Styling: CSS (public folder)
 
 ---
-
-##  Project Structure
