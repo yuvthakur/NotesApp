@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <h1>Your notes</h1>
+        <a href="http://localhost:8080/notes/new">Create New Note</a>
+
+        <% for(let note of Notelist){ %>
+            <div>
+                <h2>Id: <%= note.id %></h2>
+                <h2>content: <%= note.content %></h2>
+                <a href="http://localhost:8080/notes/<%= note.id %>">View</a>
+                <a href="http://localhost:8080/notes/<%= note.id %>/edit">Edit</a>
+                <a href="http://localhost:/notes/<%= note.id %>">Delete</a>
+            </div>
+        <% } %>
+</body>
+</html>

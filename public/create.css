@@ -1,0 +1,73 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #dfe9f3, #ffffff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+form {
+    background: #fff;
+    padding: 25px;
+    width: 400px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header */
+header {
+    position: absolute;
+    top: 40px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Textarea */
+textarea {
+    width: 100%;
+    height: 120px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    resize: none;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Focus effect */
+textarea:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.3);
+}
+
+/* Button */
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #6c63ff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover */
+button:hover {
+    background: #574fd6;
+    transform: scale(1.05);
+}

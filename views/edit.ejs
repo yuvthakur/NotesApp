@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+    <link rel="stylesheet" href="/edit.css">
+</head>
+<body>
+        <header>Edit your notes</header>
+
+        <form action="/notes/<%= note.id %>?_method=PATCH" method="post">
+            <label for="label">Note</label>
+            <textarea name="content" id="label"><%= note.content %></textarea>
+            <button type="submit">Update</button>
+        </form>
+</body>
+</html>
