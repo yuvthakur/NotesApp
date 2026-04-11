@@ -1,23 +1,23 @@
-# Use official Node.js LTS image
+# Use lightweight Node image
 FROM node:18-alpine
 
 # Set working directory
 WORKDIR /app
 
-# Copy package files first (better caching)
+# Copy dependency files first
 COPY package*.json ./
 
 # Install dependencies
 RUN npm install --production
 
-# Copy rest of the application
+# Copy full project
 COPY . .
 
-# Expose port 8080
+# App runs on port 8080
 EXPOSE 8080
 
-# Set environment variable (optional but good practice)
+# Environment variable
 ENV PORT=8080
 
-# Start the app
-CMD ["node", "app.js"]
+# Start the app (your entry file)
+CMD ["node", "index.js"]
